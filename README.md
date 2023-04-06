@@ -19,7 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshots
 
-Screenshot
+Desktop & Small Mobile
 ![Screenshot](screenshot.jpg)
 
 
@@ -41,7 +41,7 @@ Screenshot
 
 I almost skipped this project because it's so simple, but it was still great practice to develop my workflows and see how quickly I can complete projects.
 
-As I tend to do for all my projects so far, I added an additional breakpoint for smaller screen sizes.
+I also added an additional breakpoint for smaller screen sizes.
 
 
 ### Continued development
