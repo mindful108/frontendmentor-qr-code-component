@@ -1,0 +1,183 @@
+/* ================ */
+/* Reset */
+/* ================ */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+p {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+  /* SEE MORE BELOW */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ================ */
+/* Design Templates
+Used to refine designs 
+live in browser */
+/* ================ */
+
+.template-mobile {
+  width: 375px; /* Adjust to image dimensions */
+  height: 667px; /* Adjust to image dimensions */
+  position: absolute;
+  opacity: 0.25;
+  display: none;
+  top: 340px;
+}
+
+.template-desktop {
+  width: 1440px; /* Adjust to image dimensions */
+  height: 900px; /* Adjust to image dimensions */
+  position: absolute;
+  opacity: 1;
+  /* z-index: -1; */
+  /* top: 10px; */
+  display: none;
+}
+
+/* ================ */
+/* Global Variables */
+/* ================ */
+
+:root {
+  --lightGray: hsl(212, 45%, 89%);
+  --grayishBlue: hsl(220, 15%, 55%);
+  --darkBlue: hsl(218, 44%, 22%);
+}
+
+/* ================ */
+/* Custom Fonts
+font-family: 'Outfit', sans-serif;
+400, 700
+*/
+
+/* ================ */
+/* Styles */
+/* ================ */
+
+body {
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  background-color: var(--lightGray);
+  padding: 0 1.5rem;
+}
+
+.card {
+background-color: #fff;
+  max-width: 320px;
+  padding: 1rem;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+img {
+  border-radius: 10px;
+  border: 1px solid var(--darkCyan);
+}
+
+h1 {
+  color: var(--darkBlue);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 1.5rem 0 0.95rem;
+}
+
+p {
+  color: var(--grayishBlue);
+  letter-spacing: .25px;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 1.4375rem;
+}
+
+/* =============== */
+/* ATTRIBUTION */
+/* =============== */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 1;
+  line-height: 1.8;
+  text-align: center;
+  color: #999;
+}
+
+footer a {
+  /* attribution*/
+  font-weight: 900;
+  color: var(--darkCyan);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+/* ================ */
+/* Media Queries */
+/* ================ */
+
+@media (min-height: 650px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 850px) and (min-height: 650px) {
+  body {
+    height: 100vh;
+  }
+}
+@media (max-width: 268px) {
+  h1 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: .75rem;
+  }
+  .card {
+    padding: .75rem;
+  }
+  .card-content {
+    padding: 0 .5rem;
+  }
+}
