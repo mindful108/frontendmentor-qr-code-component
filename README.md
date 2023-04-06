@@ -25,8 +25,8 @@ Desktop & Small Mobile
 
 ### Links
 
-- Solution URL: [Solution code on Github](https://github.com/mindful108/frontendmentor-product-preview-card-component.git)
-- Live Site URL: [Live solution hosted on Github](https://mindful108.github.io/frontendmentor-product-preview-card-component/)
+- [Solution code on Github](https://github.com/mindful108/frontendmentor-qr-code-component.git)
+- [Live solution](https://frontendmentor-qr-code-component-sigma.vercel.app)
 
 ## My process
 
